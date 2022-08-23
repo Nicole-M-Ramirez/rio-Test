@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { useState } from 'react';
-import NavegacionMenu from '../components/navegacion-Menu';
+import NavegacionMenu from '../components/Navegacion-Menu';
 function Menu () {
 
     const [configuracion, setConfiguracion] = useState(false);
