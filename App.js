@@ -1,3 +1,6 @@
+//Buscar componentes prehechos para el app
+//cobol
+
 
 import { StyleSheet, Text, View } from 'react-native';
 
@@ -20,39 +23,66 @@ export default function App() {
     <View style={styles.container}>
         <NavigationContainer>
           <Stack.Navigator>
-            <Stack.Screen
+            {/* <Stack.Screen
               name="Opening"
               component={Opening}
               options={{
                 headerShown: false,
               }}
-            />
+            /> */}
             <Stack.Screen 
               name='Menu'
               component={Menu}
               options={{
+                headerTitle: "",
                 headerShown: false,
+                
               }}
             />
             <Stack.Screen 
               name='Actividades'
               component={Actividades}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6'
+              }}
             />
             <Stack.Screen 
               name='Perfil'
               component={Perfil}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6'
+              }}
             />
             <Stack.Screen 
               name='Comunidad'
               component={Comunidad}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6'
+              }}
             />
             <Stack.Screen 
               name='Informacion'
               component={Informacion}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6'
+              }}
             />
             <Stack.Screen 
               name='Configuracion'
               component={Configuracion}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6'
+              }}
             />
           </Stack.Navigator>
         </NavigationContainer>
