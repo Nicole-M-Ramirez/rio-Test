@@ -1,42 +1,62 @@
-import { StyleSheet, Text, View, Button } from 'react-native';
-import { useState } from 'react';
-import NavegacionMenu from '../components/Navegacion-Menu';
-function Menu () {
+// Un comentario por Rafael Arce 
 
-    const [configuracion, setConfiguracion] = useState(false);
-    const [actividades, setActividades] = useState(false);
-    const [comunidad, setComunidad] = useState(false);
-    const [miPerfil, setMiPerfil] = useState(false);
-    const [Informacion, setInformacion] = useState(false);
+import { Pressable, StyleSheet, View, Text} from 'react-native';
+import SquareButton from '../components/Square-Button';
 
-    let MenuOp = null;
-    let screen = (
-        <>
-            <Text>Elige una opcion:</Text>
-            <Button title='Configuracion' onPress={() => MenuOp="Configuracion"}/>
-            {/* <Button title='Actividades' onPress={pressAct}/>
-            <Button title='Comunidad' onPress={pressComun}/>
-            <Button title='Mi Perfil' onPress={pressHandler}/>
-            <Button title='Informacion' onPress={pressHandler}/> */}
-            
-        </>
-    )
-    function pressHandler() {
-        console.log(MenuOp)
+function Menu({navigation}) {
+
+    function pressHandler(page) {
+        navigation.navigate(page)
     }
 
-    if(MenuOp === 'Configuracion'){
-        setConfiguracion(true)
+    function pressHandlerAct () {
+        navigation.navigate('Actividades');
     }
 
-    console.log(configuracion);
+    function pressHandlerPer () {
+        navigation.navigate('Perfil');
+    }
 
+    function pressHandlerComu () {
+        navigation.navigate('Comunidad');
+    }
 
-    return(
-        <View>
-            {screen}
+    function pressHandlerInfo () {
+        navigation.navigate('Informacion');
+    }
+
+    function pressHandlerConf () {
+        navigation.navigate('Configuracion');
+    }    
+
+  return (
+    <View style={styles.root}>
+        <View style={styles.buttonDirection}>
+            <SquareButton title='Actividades' pressed={pressHandlerAct} color="#52ebde"/>
+            <SquareButton title='Perfil' pressed={pressHandlerPer} color="#2ca3de"/>
+            <SquareButton title='Comunidad' pressed={pressHandlerComu} color="#2a5dd4"/>
+            <SquareButton title='Informacion' pressed={pressHandlerInfo} color="#7c63ad"/>
+            <SquareButton title='Configuracion' pressed={pressHandlerConf} color="#e394df"/>
         </View>
-    );
+    </View>
+  )
 }
 
 export default Menu;
+
+const styles = StyleSheet.create({
+    root: {
+        backgroundColor: '#06314a',
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: 'row',
+      },
+    buttonDirection: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: 'row',
+        flexWrap: 'wrap'
+    },
+})
