@@ -1,3 +1,5 @@
+// Un comentario por Rafael Arce 
+
 import { Pressable, StyleSheet, View, Text} from 'react-native';
 import SquareButton from '../components/Square-Button';
 
