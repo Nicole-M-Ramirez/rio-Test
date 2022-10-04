@@ -7,7 +7,7 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/images/RioConBackground.jpg",
+      "image": "./assets/images/rioSplash.png",
       "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },

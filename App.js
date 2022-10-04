@@ -8,6 +8,9 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack'
 
 import Opening from './screens/Opening';
+import Idioma from './screens/Idioma';
+import Politica from './screens/Politica';
+import BaseTeorica from './screens/BaseTeorica';
 import Menu from './screens/Menu';
 import Actividades from './screens/Actividades';
 import Perfil from './screens/Perfil';
@@ -30,6 +33,30 @@ export default function App() {
                 headerShown: false,
               }}
             /> */}
+            <Stack.Screen 
+              name='Idioma'
+              component={Idioma}
+              options={{
+                headerTitle: "",
+                headerShown: false,
+              }}
+            />
+            <Stack.Screen 
+              name='Politica'
+              component={Politica}
+              options={{
+                headerTitle: "",
+                headerShown: false,
+              }}
+            />
+            <Stack.Screen 
+              name='Teoria'
+              component={BaseTeorica}
+              options={{
+                headerTitle: "",
+                headerShown: false,
+              }}
+            />
             <Stack.Screen 
               name='Menu'
               component={Menu}
