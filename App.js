@@ -18,6 +18,13 @@ import Comunidad from './screens/Comunidad';
 import Informacion from './screens/Informacion';
 import Configuracion from './screens/Configuracion';
 
+import Feliz from './screens/emociones/Feliz';
+import Ansioso from './screens/emociones/Ansioso';
+import Confundido from './screens/emociones/Confundido';
+import Triste from './screens/emociones/Triste';
+import Molesto from './screens/emociones/Molesto';
+import Asustado from './screens/emociones/Asustado';
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -72,8 +79,63 @@ export default function App() {
               options={{
                 headerTitle:"",
                 headerTransparent: true,
-                headerTintColor: '#24e3c6'
+                headerTintColor: '#24e3c6',
+
               }}
+            />
+            <Stack.Screen 
+              name='Feliz'
+              component={Feliz}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6',
+              }} 
+            />
+            <Stack.Screen 
+              name='Ansioso'
+              component={Ansioso}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6',
+              }} 
+            />
+            <Stack.Screen 
+              name='Confundido'
+              component={Confundido}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6',
+              }} 
+            />
+            <Stack.Screen 
+              name='Triste'
+              component={Triste}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6',
+              }} 
+            />
+            <Stack.Screen 
+              name='Molesto'
+              component={Molesto}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6',
+              }} 
+            />
+            <Stack.Screen 
+              name='Asustado'
+              component={Asustado}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6',
+              }} 
             />
             <Stack.Screen 
               name='Perfil'

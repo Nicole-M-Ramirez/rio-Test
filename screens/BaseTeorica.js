@@ -47,8 +47,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   button: {
-    marginLeft: 300,
-    marginTop: 665,
+    marginLeft: '70%',
+    marginTop: '160%',
     //borderRadius: 8,
     //padding: 6,
     height: 30,

@@ -33,13 +33,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   button: {
-    marginTop: 740,
+    marginTop: '170%',
     //borderRadius: 8,
     //padding: 6,
     height: 50,
     width: '30%',
     justifyContent: 'center',
     alignItems: 'center',
+    //backgroundColor: 'pink',
     elevation: 5,
     margin: 60
   }

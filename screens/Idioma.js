@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   button: {
-    marginTop: 420,
+    marginTop: "95%",
     //borderRadius: 8,
     //padding: 6,
     height: 89,
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     elevation: 5,
-    //backgroundColor: 'pink', 
+    backgroundColor: 'pink', 
     margin: 5
   },
 })
