@@ -25,6 +25,8 @@ import Triste from './screens/emociones/Triste';
 import Molesto from './screens/emociones/Molesto';
 import Asustado from './screens/emociones/Asustado';
 
+import PerfilPass from './screens/PerfilPass';
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
@@ -136,6 +138,15 @@ export default function App() {
                 headerTransparent: true,
                 headerTintColor: '#24e3c6',
               }} 
+            />
+            <Stack.Screen 
+              name='PerfilPass'
+              component={PerfilPass}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6'
+              }}
             />
             <Stack.Screen 
               name='Perfil'

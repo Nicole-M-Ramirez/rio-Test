@@ -73,39 +73,15 @@ import { StyleSheet, View, ImageBackground, Pressable } from 'react-native';
 import SquareButton from '../components/Square-Button';
 
 function Menu ({navigation}) {
-  function pressHandler(){
-    navigation.navigate('Politica')
-  }
-
-    function pressHandlerAct () {
-        navigation.navigate('Actividades');
-    }
-
-    function pressHandlerPer () {
-        navigation.navigate('Perfil');
-    }
-
-    function pressHandlerComu () {
-        navigation.navigate('Comunidad');
-    }
-
-    function pressHandlerInfo () {
-        navigation.navigate('Informacion');
-    }
-
-    function pressHandlerConf () {
-        navigation.navigate('Configuracion');
-    }  
-
 
   return(
     <View style={styles.container}>
         <ImageBackground source={require('../assets/images/menu.jpg')} resizeMode="cover" style={styles.backgroundImage}>
-            <SquareButton mtop='44%' mleft='7%' h='19%' w='87%' pressed={pressHandlerAct}/>
-            <SquareButton mtop='2%' mleft='7%' h='19%' w='42%' pressed={pressHandlerPer}/>
-            <SquareButton mtop='-41%' mleft='51%' h='19%' w='42%' pressed={pressHandlerComu}/>
-            <SquareButton mtop='2%' mleft='7%' h='19%' w='42%' pressed={pressHandlerInfo}/>
-            <SquareButton mtop='-40%' mleft='51%' h='19%' w='42%' pressed={pressHandlerConf}/>
+            <SquareButton mtop='44%' mleft='7%' h='19%' w='87%' pressed={() => {navigation.navigate('Actividades')}}/>
+            <SquareButton mtop='2%' mleft='7%' h='19%' w='42%' pressed={() => {navigation.navigate('PerfilPass')}}/>
+            <SquareButton mtop='-41%' mleft='51%' h='19%' w='42%' pressed={() => {navigation.navigate('Comunidad')}}/>
+            <SquareButton mtop='2%' mleft='7%' h='19%' w='42%' pressed={() => {navigation.navigate('Informacion')}}/>
+            <SquareButton mtop='-40%' mleft='51%' h='19%' w='42%' pressed={() => {navigation.navigate('Configuracion')}}/>
         </ImageBackground>
     </View>
 );
