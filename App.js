@@ -26,6 +26,13 @@ import Molesto from './screens/emociones/Molesto';
 import Asustado from './screens/emociones/Asustado';
 
 import PerfilPass from './screens/PerfilPass';
+import Calendario from './screens/miEspacio/Calendario';
+import Diario from './screens/miEspacio/Diario';
+import Logros from './screens/miEspacio/Logros';
+import Metas from './screens/miEspacio/Metas';
+import MetaNueva from './screens/miEspacio/MetaNueva';
+import Exportar from './screens/miEspacio/Exportar';
+import ExpoExito from './screens/miEspacio/ExpoExito';
 
 const Stack = createNativeStackNavigator();
 
@@ -151,6 +158,69 @@ export default function App() {
             <Stack.Screen 
               name='Perfil'
               component={Perfil}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6'
+              }}
+            />
+            <Stack.Screen 
+              name='Calendario'
+              component={Calendario}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: 'black'
+              }}
+            />
+            <Stack.Screen 
+              name='Diario'
+              component={Diario}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: 'black'
+              }}
+            />
+            <Stack.Screen 
+              name='Logros'
+              component={Logros}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6'
+              }}
+            />
+            <Stack.Screen 
+              name='Metas'
+              component={Metas}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6'
+              }}
+            />
+            <Stack.Screen 
+              name='MetaNueva'
+              component={MetaNueva}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6'
+              }}
+            />
+            <Stack.Screen 
+              name='Exportar'
+              component={Exportar}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6'
+              }}
+            />
+            <Stack.Screen 
+              name='ExpoExito'
+              component={ExpoExito}
               options={{
                 headerTitle:"",
                 headerTransparent: true,

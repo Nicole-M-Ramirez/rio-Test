@@ -1,20 +1,25 @@
-import { StyleSheet, View, Text, Pressable } from 'react-native';
+import { StyleSheet, View, ImageBackground, Pressable } from 'react-native';
 
-function Configuracion () {
-    return (
-        <View
-          style={styles.root}>
-          <Text>Pantalla de Configuracion</Text>
-        </View>
-      )
+function Feliz ({navigation}) {
+
+  return(
+    <View style={styles.container}>
+        <ImageBackground source={require('../assets/images/configuracion.jpg')} resizeMode="cover" style={styles.backgroundImage}>
+        </ImageBackground>
+    </View>
+);
 }
 
-export default Configuracion;
+export default Feliz;
 
 const styles = StyleSheet.create({
-    root: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-      }
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+},
+  backgroundImage: {
+    flex: 1,
+    justifyContent: "center",
+    flexDirection: 'row',
+  },
 })

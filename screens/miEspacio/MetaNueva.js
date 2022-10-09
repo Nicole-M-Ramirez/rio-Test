@@ -1,16 +1,18 @@
 import { StyleSheet, View, ImageBackground, Pressable } from 'react-native';
+import SquareButton from '../../components/Square-Button';
 
-function Feliz ({navigation}) {
+function MetaNueva ({navigation}) {
 
   return(
     <View style={styles.container}>
-        <ImageBackground source={require('../assets/images/comunidad.jpg')} resizeMode="cover" style={styles.backgroundImage}>
+        <ImageBackground source={require('../../assets/images/metaNueva.jpg')} resizeMode="cover" style={styles.backgroundImage}>
+            <SquareButton mtop='180%' mleft='-27%' h='4%' w='60%' pressed={() => {navigation.navigate('Perfil')}}/>
         </ImageBackground>
     </View>
 );
 }
 
-export default Feliz;
+export default MetaNueva;
 
 const styles = StyleSheet.create({
   container: {

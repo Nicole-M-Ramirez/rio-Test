@@ -1,20 +1,25 @@
-import { StyleSheet, View, Text, Pressable } from 'react-native';
+import { StyleSheet, View, ImageBackground, Pressable } from 'react-native';
 
-function Informacion () {
-    return (
-        <View
-          style={styles.root}>
-          <Text>Pagina de Informacion</Text>
-        </View>
-      )
+function Feliz ({navigation}) {
+
+  return(
+    <View style={styles.container}>
+        <ImageBackground source={require('../assets/images/informacion.jpg')} resizeMode="cover" style={styles.backgroundImage}>
+        </ImageBackground>
+    </View>
+);
 }
 
-export default Informacion;
+export default Feliz;
 
 const styles = StyleSheet.create({
-    root: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
-      }
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+},
+  backgroundImage: {
+    flex: 1,
+    justifyContent: "center",
+    flexDirection: 'row',
+  },
 })
