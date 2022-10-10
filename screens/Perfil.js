@@ -9,7 +9,7 @@ function Perfil ({navigation}) {
           <SquareButton mtop='-41%' mleft='51%' h='19%' w='42%' pressed={() => {navigation.navigate('Diario')}}/>
           <SquareButton mtop='2%' mleft='7%' h='19%' w='42%' pressed={() => {navigation.navigate('Logros')}}/>
           <SquareButton mtop='-41%' mleft='51%' h='19%' w='42%' pressed={() => {navigation.navigate('Metas')}}/>
-          <SquareButton mtop='2%' mleft='7%' h='19%' w='42%' pressed={() => {navigation.navigate('Informacion')}}/>
+          <SquareButton mtop='2%' mleft='7%' h='19%' w='42%' pressed={() => {console.log("No definido")}}/>
           <SquareButton mtop='-40%' mleft='51%' h='19%' w='42%' pressed={() => {navigation.navigate('Exportar')}}/>
         </ImageBackground>
     </View>
