@@ -19,7 +19,7 @@ function PerfilPass ({navigation}) {
 
   return(
     <View style={styles.container}>
-        <ImageBackground source={require('../assets/images/password.jpg')} resizeMode="cover" style={styles.backgroundImage}>
+        <ImageBackground source={require('../assets/updateImages/password.jpg')} resizeMode="cover" style={styles.backgroundImage}>
           <SquareButton mtop='88%' mleft='7.5%' h='9.5%' w='27%' pressed={()=>{ num = '1'; pressHandler('1')}}/>
           <SquareButton mtop='-21%' mleft='36%' h='9.5%' w='27%' pressed={()=>{num = '2'; pressHandler('2')}}/>
           <SquareButton mtop='-20%' mleft='65%' h='9.5%' w='27%' pressed={()=>{num = '3'; pressHandler('3')}}/>

@@ -5,7 +5,7 @@ function ExpoExito ({navigation}) {
 
   return(
     <View style={styles.container}>
-        <ImageBackground source={require('../../assets/images/expoExito.jpg')} resizeMode="cover" style={styles.backgroundImage}>
+        <ImageBackground source={require('../../assets/updateImages/exportexito.jpg')} resizeMode="cover" style={styles.backgroundImage}>
             <SquareButton mtop='180%' mleft='-27%' h='4%' w='60%' pressed={() => {navigation.navigate('Perfil')}}/>
         </ImageBackground>
     </View>

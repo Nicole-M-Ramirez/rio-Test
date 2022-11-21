@@ -5,8 +5,8 @@ function Diario ({navigation}) {
 
   return(
     <View style={styles.container}>
-        <ImageBackground source={require('../../assets/images/diario.jpg')} resizeMode="cover" style={styles.backgroundImage}>
-            <SquareButton mtop='180%' mleft='7%' h='4%' w='25%' pressed={() => {navigation.navigate('Perfil')}}/>
+        <ImageBackground source={require('../../assets/updateImages/diario.jpg')} resizeMode="cover" style={styles.backgroundImage}>
+            <SquareButton mtop='177%' mleft='7%' h='4%' w='25%' pressed={() => {navigation.navigate('Perfil')}}/>
         </ImageBackground>
     </View>
 );

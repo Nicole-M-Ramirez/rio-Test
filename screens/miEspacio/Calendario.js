@@ -4,7 +4,7 @@ function Calendario ({navigation}) {
 
   return(
     <View style={styles.container}>
-        <ImageBackground source={require('../../assets/images/calendario.jpg')} resizeMode="cover" style={styles.backgroundImage}>
+        <ImageBackground source={require('../../assets/updateImages/calendario.jpg')} resizeMode="cover" style={styles.backgroundImage}>
         </ImageBackground>
     </View>
 );

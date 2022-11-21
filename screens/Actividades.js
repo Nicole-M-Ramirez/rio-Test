@@ -70,7 +70,7 @@ function Actividades ({navigation}) {
 
   return(
     <View style={styles.container}>
-        <ImageBackground source={require('../assets/images/emociones.jpg')} resizeMode="cover" style={styles.backgroundImage}>
+        <ImageBackground source={require('../assets/updateImages/emociones.jpg')} resizeMode="cover" style={styles.backgroundImage}>
           <SquareButton mtop='45%' mleft='7%' h='19%' w='42%' pressed={pressHandlerF}/>
           <SquareButton mtop='-41%' mleft='51%' h='19%' w='42%' pressed={pressHandlerAn}/>
           <SquareButton mtop='2%' mleft='7%' h='19%' w='42%' pressed={pressHandlerC}/>

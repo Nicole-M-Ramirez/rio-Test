@@ -8,7 +8,7 @@ function Idioma ({navigation}) {
 
   return(
     <View style={styles.container}>
-        <ImageBackground source={require('../assets/images/languageScreen.jpg')} resizeMode="cover" style={styles.backgroundImage}>
+        <ImageBackground source={require('../../assets/updateImages/idioma.jpg')} resizeMode="cover" style={styles.backgroundImage}>
             <Pressable style={styles.button} onPress={pressHandler}>
             </Pressable>
             <Pressable style={styles.button} onPress={pressHandler}>

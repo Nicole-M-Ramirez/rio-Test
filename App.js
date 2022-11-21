@@ -8,9 +8,11 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack'
 
 import Opening from './screens/Opening';
-import Idioma from './screens/Idioma';
-import Politica from './screens/Politica';
-import BaseTeorica from './screens/BaseTeorica';
+import Idioma from './screens/intro/Idioma';
+import Politica from './screens/intro/Politica';
+import BaseTeorica from './screens/intro/BaseTeorica';
+import Explicacion1 from './screens/intro/Explicacion-1';
+import Explicacion2 from './screens/intro/Explicacion-2';
 import Menu from './screens/Menu';
 import Actividades from './screens/Actividades';
 import Perfil from './screens/Perfil';
@@ -29,8 +31,12 @@ import PerfilPass from './screens/PerfilPass';
 import Calendario from './screens/miEspacio/Calendario';
 import Diario from './screens/miEspacio/Diario';
 import Logros from './screens/miEspacio/Logros';
-import Metas from './screens/miEspacio/Metas';
+import MetasPorActividad from './screens/miEspacio/MetasPorActividad';
+import MetasPorTiempo from './screens/miEspacio/MetasPorTiempo';
 import MetaNueva from './screens/miEspacio/MetaNueva';
+import Graficas from './screens/miEspacio/Graficas';
+import GraficaDeBarras from './screens/miEspacio/GraficaDeBarras';
+import GraficaCircular from './screens/miEspacio/GraficaCircular';
 import Exportar from './screens/miEspacio/Exportar';
 import ExpoExito from './screens/miEspacio/ExpoExito';
 
@@ -68,6 +74,22 @@ export default function App() {
             <Stack.Screen 
               name='Teoria'
               component={BaseTeorica}
+              options={{
+                headerTitle: "",
+                headerShown: false,
+              }}
+            />
+            <Stack.Screen 
+              name='Explicacion1'
+              component={Explicacion1}
+              options={{
+                headerTitle: "",
+                headerShown: false,
+              }}
+            />
+            <Stack.Screen 
+              name='Explicacion2'
+              component={Explicacion2}
               options={{
                 headerTitle: "",
                 headerShown: false,
@@ -192,8 +214,38 @@ export default function App() {
               }}
             />
             <Stack.Screen 
-              name='Metas'
-              component={Metas}
+              name='MetasPorActividad'
+              component={MetasPorActividad}
+              options={{
+                headerTitle:"",
+                // headerTransparent: true,
+                // headerTintColor: '#24e3c6'
+                headerShown: false,
+              }}
+            />
+            <Stack.Screen 
+              name='MetasPorTiempo'
+              component={MetasPorTiempo}
+              options={{
+                headerTitle:"",
+                // headerTransparent: true,
+                // headerTintColor: '#24e3c6'
+                headerShown: false,
+              }}
+            />
+            <Stack.Screen 
+              name='MetaNueva'
+              component={MetaNueva}
+              options={{
+                headerTitle:"",
+                // headerTransparent: true,
+                // headerTintColor: '#24e3c6'
+                headerShown: false,
+              }}
+            />
+            <Stack.Screen 
+              name='Graficas'
+              component={Graficas}
               options={{
                 headerTitle:"",
                 headerTransparent: true,
@@ -201,8 +253,17 @@ export default function App() {
               }}
             />
             <Stack.Screen 
-              name='MetaNueva'
-              component={MetaNueva}
+              name='GraficaDeBarras'
+              component={GraficaDeBarras}
+              options={{
+                headerTitle:"",
+                headerTransparent: true,
+                headerTintColor: '#24e3c6'
+              }}
+            />
+            <Stack.Screen 
+              name='GraficaCircular'
+              component={GraficaCircular}
               options={{
                 headerTitle:"",
                 headerTransparent: true,
@@ -214,8 +275,9 @@ export default function App() {
               component={Exportar}
               options={{
                 headerTitle:"",
-                headerTransparent: true,
-                headerTintColor: '#24e3c6'
+                // headerTransparent: true,
+                // headerTintColor: '#24e3c6'
+                headerShown: false,
               }}
             />
             <Stack.Screen 

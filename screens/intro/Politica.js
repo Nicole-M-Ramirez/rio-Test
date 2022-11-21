@@ -10,7 +10,7 @@ function Politica ({navigation}) {
     }
   return(
     <View style={styles.container}>
-        <ImageBackground source={require('../assets/images/politicaScreen.jpg')} resizeMode="cover" style={styles.backgroundImage}>
+        <ImageBackground source={require('../../assets/updateImages/politica.jpg')} resizeMode="cover" style={styles.backgroundImage}>
             <Pressable style={styles.button} onPress={noAcepto}>
             </Pressable>
             <Pressable style={styles.button} onPress={acepto}>

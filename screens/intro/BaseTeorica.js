@@ -23,11 +23,11 @@ import { StyleSheet, View, Text, Pressable, ImageBackground } from 'react-native
 function BaseTeorica ({navigation}) {
 
     function siguiente() {
-        navigation.navigate('Menu')
+        navigation.navigate('Explicacion1')
     }
   return(
     <View style={styles.container}>
-        <ImageBackground source={require('../assets/images/baseteoricaScreen.jpg')} resizeMode="cover" style={styles.backgroundImage}>
+        <ImageBackground source={require('../../assets/updateImages/baseTeorica.jpg')} resizeMode="cover" style={styles.backgroundImage}>
             <Pressable style={styles.button} onPress={siguiente}>
             </Pressable>
         </ImageBackground>
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   },
   button: {
     marginLeft: '70%',
-    marginTop: '160%',
+    marginTop: '147%',
     //borderRadius: 8,
     //padding: 6,
     height: 30,
