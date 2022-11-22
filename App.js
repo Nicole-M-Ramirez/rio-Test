@@ -20,6 +20,10 @@ import Comunidad from './screens/Comunidad';
 import Informacion from './screens/Informacion';
 import Configuracion from './screens/Configuracion';
 
+import ProvocacionTris from './screens/miEspacio/ProvocacionTris';
+import ProvocacionMol from './screens/emociones/ProvocacionMol';
+import ProvocacionAns from './screens/emociones/ProvocacionAns';
+import EmocionesExpandidas from './screens/emociones/EmocionesExpandidas';
 import Feliz from './screens/emociones/Feliz';
 import Ansioso from './screens/emociones/Ansioso';
 import Confundido from './screens/emociones/Confundido';
@@ -115,58 +119,104 @@ export default function App() {
               }}
             />
             <Stack.Screen 
+              name='EmocionesExpandidas'
+              component={EmocionesExpandidas}
+              options={{
+                headerTitle:"",
+                // headerTransparent: true,
+                // headerTintColor: '#24e3c6'
+                headerShown: false,
+              }} 
+            />
+            <Stack.Screen 
+              name='ProvocacionAns'
+              component={ProvocacionAns}
+              options={{
+                headerTitle:"",
+                // headerTransparent: true,
+                // headerTintColor: '#24e3c6'
+                headerShown: false,
+              }} 
+            />
+            <Stack.Screen 
+              name='ProvocacionMol'
+              component={ProvocacionMol}
+              options={{
+                headerTitle:"",
+                // headerTransparent: true,
+                // headerTintColor: '#24e3c6'
+                headerShown: false,
+              }} 
+            />
+            <Stack.Screen 
+              name='ProvocacionTris'
+              component={ProvocacionTris}
+              options={{
+                headerTitle:"",
+                // headerTransparent: true,
+                // headerTintColor: '#24e3c6'
+                headerShown: false,
+              }} 
+            />
+            <Stack.Screen 
               name='Feliz'
               component={Feliz}
               options={{
                 headerTitle:"",
-                headerTransparent: true,
-                headerTintColor: '#24e3c6',
-              }} 
+                // headerTransparent: true,
+                // headerTintColor: '#24e3c6'
+                headerShown: false,
+              }}  
             />
             <Stack.Screen 
               name='Ansioso'
               component={Ansioso}
               options={{
                 headerTitle:"",
-                headerTransparent: true,
-                headerTintColor: '#24e3c6',
-              }} 
+                // headerTransparent: true,
+                // headerTintColor: '#24e3c6'
+                headerShown: false,
+              }}  
             />
             <Stack.Screen 
               name='Confundido'
               component={Confundido}
               options={{
                 headerTitle:"",
-                headerTransparent: true,
-                headerTintColor: '#24e3c6',
-              }} 
+                // headerTransparent: true,
+                // headerTintColor: '#24e3c6'
+                headerShown: false,
+              }}  
             />
             <Stack.Screen 
               name='Triste'
               component={Triste}
               options={{
                 headerTitle:"",
-                headerTransparent: true,
-                headerTintColor: '#24e3c6',
-              }} 
+                // headerTransparent: true,
+                // headerTintColor: '#24e3c6'
+                headerShown: false,
+              }}  
             />
             <Stack.Screen 
               name='Molesto'
               component={Molesto}
               options={{
                 headerTitle:"",
-                headerTransparent: true,
-                headerTintColor: '#24e3c6',
-              }} 
+                // headerTransparent: true,
+                // headerTintColor: '#24e3c6'
+                headerShown: false,
+              }}  
             />
             <Stack.Screen 
               name='Asustado'
               component={Asustado}
               options={{
                 headerTitle:"",
-                headerTransparent: true,
-                headerTintColor: '#24e3c6',
-              }} 
+                // headerTransparent: true,
+                // headerTintColor: '#24e3c6'
+                headerShown: false,
+              }}  
             />
             <Stack.Screen 
               name='PerfilPass'
